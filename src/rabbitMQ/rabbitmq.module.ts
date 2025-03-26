@@ -6,11 +6,11 @@ import { rabbitMqConfig } from './rabbitmq.config';
   imports: [
     ClientsModule.register([
       {
-        name: 'AUTH_SERVICE',
+        name: 'ADMIN_SERVICE',
         transport: Transport.RMQ,
         options: {
           urls: rabbitMqConfig.urls,
-          queue: "auth_queue",
+          queue: "admin_queue",
           queueOptions: rabbitMqConfig.queueOptions,
         },
       },

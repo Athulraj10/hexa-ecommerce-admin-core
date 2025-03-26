@@ -1,9 +1,3 @@
-import * as User from "./user.entity";
-import * as Address from "./address.entity";
-import * as RefreshToken from "./refreshToken.entity";
+import * as GeneralSettings from './generalSettings.entity';
 
-export {
-  User,
-  Address,
-  RefreshToken,
-};
+export { GeneralSettings };
